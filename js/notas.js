@@ -8,8 +8,6 @@ function persona(nombre, apellido, curso, año, nota_1, nota_2, nota_3) {
   this.nota_3 = nota_3;
 }
 
-const AlumnosArray = [];
-
 function CrearPersona(persona) {
   persona = new persona(
     prompt("Ingrese el nombre del alumno"),
