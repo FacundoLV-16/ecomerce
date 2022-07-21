@@ -1,4 +1,4 @@
-function persona(nombre, apellido, curso, año, nota_1, nota_2, nota_3) {
+/*function persona(nombre, apellido, curso, año, nota_1, nota_2, nota_3) {
   this.nombre = nombre;
   this.apellido = apellido;
   this.curso = curso;
@@ -7,6 +7,8 @@ function persona(nombre, apellido, curso, año, nota_1, nota_2, nota_3) {
   this.nota_2 = nota_2;
   this.nota_3 = nota_3;
 }
+
+const AlumnosArray = [];
 
 function CrearPersona(persona) {
   persona = new persona(
@@ -76,4 +78,4 @@ function CrearPersona(persona) {
 }
 
 const respuesta = CrearPersona(persona);
-console.log(respuesta);
+console.log(respuesta);*/
