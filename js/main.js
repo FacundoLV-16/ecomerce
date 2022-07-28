@@ -14,4 +14,4 @@ function desplegar() {
   }
 }
 
-menu_btn.addEventListener("click", desplegar, true);
+menu_btn.addEventListener("click", desplegar(), true);
