@@ -92,10 +92,10 @@
         display: none;
       }
     }
-    #menu-desplegable {
+    .menu-desplegable {
       display: none;
     }
-    #menu-desplegable.js {
+    .menu-desplegable-activo {
       position: absolute;
       margin: -35px 0px 0px -40px;
       ul {

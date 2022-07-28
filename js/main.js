@@ -1,17 +1,16 @@
 /**  boton del menu desplegable movil **/
 
-let menu_btn = document.getElementById("menu");
-let menu_desplegable = document.getElementById("menu-desplegable");
+let menu = document.getElementsByClassName("menu-desplegable");
 contador = 0;
 
-function abrir() {
+function desplegar() {
   if (contador === 0) {
-    menu_desplegable.classList.add(".js");
+    menu.classList.add("-activo");
     contador = 1;
   } else {
-    menu_desplegable.remove(".js");
+    menu.remove("-activo");
     contador = 0;
   }
 }
 
-menu_btn.addEventListener("click", abrir, true);
+menu.addEventListener("click", desplegar, true);
