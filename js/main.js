@@ -1,5 +1,6 @@
 /**  boton del menu desplegable movil **/
 
+let menu_btn = document.getElementById("menu");
 let menu = document.getElementsByClassName("menu-desplegable");
 contador = 0;
 
@@ -13,4 +14,4 @@ function desplegar() {
   }
 }
 
-menu.addEventListener("click", desplegar, true);
+menu_btn.addEventListener("click", desplegar, true);
