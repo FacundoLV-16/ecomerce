@@ -44,14 +44,23 @@
             background-color: transparent;
           }
           .btn-menu {
+            width: 25px;
             margin: 35px 0px 0px 9px;
             &:hover {
-              font-size: 110%;
+              font-size: 105%;
+            }
+            button {
+              i {
+                cursor: pointer;
+              }
             }
           }
 
           .carro-compra {
-            margin: -17px 0px 0px 37px;
+            margin: -19px 0px 0px 37px;
+            &:hover {
+              font-size: 105%;
+            }
           }
         }
         form {
@@ -83,11 +92,10 @@
         display: none;
       }
     }
-    .menu-desplegable {
+    #menu-desplegable {
       display: none;
     }
-    .menu-esplegable.js {
-      display: none;
+    #menu-desplegable.js {
       position: absolute;
       margin: -35px 0px 0px -40px;
       ul {

@@ -1,17 +1,17 @@
 /**  boton del menu desplegable movil **/
 
-let menu_deplegable = document.getElementById("menu");
-let menu_deplegado = document.getElementById("menu-desplegable");
+let menu_btn = document.getElementById("menu");
+let menu_desplegable = document.getElementById("menu-desplegable");
 contador = 0;
 
 function abrir() {
   if (contador === 0) {
-    menu_deplegable.classList.add(".js");
+    menu_desplegable.classList.add(".js");
     contador = 1;
   } else {
-    menu_deplegable.remove(".js");
+    menu_desplegable.remove(".js");
     contador = 0;
   }
 }
 
-menu_deplegable.addEventListener("click", abrir, true);
+menu_btn.addEventListener("click", abrir, true);
