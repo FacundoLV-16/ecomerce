@@ -16,13 +16,13 @@
       }
     }
     .navbar {
-      display: flex;
       ul {
         list-style: none;
       }
       .container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
         a {
           width: 70px;
           height: 70px;
@@ -31,25 +31,25 @@
         .nav_logo {
           background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__small.png);
           background-repeat: no-repeat;
-          margin: 30px 0px 0px 10px;
+          margin: 40% 0% 0% 20%;
           height: 70px;
           width: 80px;
         }
         .propaganda_btn-menu_carro-compras {
+          display: flex;
+
           .propaganda {
             display: none;
           }
-          button {
-            border: none;
-            background-color: transparent;
-          }
+
           .btn-menu {
             width: 25px;
-            margin: 35px 0px 0px 9px;
             &:hover {
               font-size: 105%;
             }
             button {
+              border: none;
+              background-color: transparent;
               i {
                 cursor: pointer;
               }
@@ -57,7 +57,6 @@
           }
 
           .carro-compra {
-            margin: -19px 0px 0px 37px;
             &:hover {
               font-size: 105%;
             }
@@ -78,10 +77,11 @@
             height: 39px;
             width: 35px;
             display: flex;
-
+            cursor: pointer;
+            border-left: solid 1px grey;
             i {
-              justify-content: center;
-              margin: 10px 0px 0px 0px;
+              justify-items: center;
+              margin: 10px 0px 0px 2px;
             }
           }
         }
@@ -93,6 +93,7 @@
       }
     }
     #menu-desplegable {
+      display: none;
       position: absolute;
       margin: -35px 0px 0px -40px;
       ul {
