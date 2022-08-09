@@ -1,4 +1,125 @@
 @media screen and (min-width: 769px) {
+  header {
+    .navbar {
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        @media screen and (min-width: 1300px) {
+          .navbar-brand {
+            width: 160px;
+          }
+          .nav_logo {
+            background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
+            background-repeat: no-repeat;
+            width: 130px;
+            height: 30px;
+            padding: 5%;
+            margin: 6% 0% 0% 3%;
+          }
+          form {
+            margin: 0px 0px 0px 0px;
+            width: 50%;
+            input {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              border: transparent;
+              margin: 10px 0px 0px 0px;
+              height: 39px;
+              width: 100%;
+            }
+            .btn {
+              margin: -39px 0px 0px 750px;
+              background-color: white;
+              border: transparent;
+              box-shadow: none;
+              height: 39px;
+              width: 35px;
+              display: flex;
+              cursor: pointer;
+              border-left: solid 1px grey;
+              i {
+                justify-items: center;
+                margin: 10px 0px 0px 2px;
+              }
+            }
+          }
+          .propaganda_btn-menu_carro-compras {
+            .propaganda {
+              a {
+                img {
+                  width: 500px;
+                }
+              }
+            }
+            .btn-menu {
+              display: none;
+            }
+            .carro-compra {
+              display: none;
+            }
+          }
+        }
+
+        .navbar-brand {
+          width: 160px;
+        }
+        .nav_logo {
+          background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
+          background-repeat: no-repeat;
+          width: 130px;
+          height: 30px;
+          padding: 5%;
+          margin: 6% 0% 0% 3%;
+        }
+        form {
+          margin: 0px 0px 0px 0px;
+          width: 50%;
+          input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: transparent;
+            margin: 10px 0px 0px 0px;
+            height: 39px;
+            width: 100%;
+          }
+          .btn {
+            margin: -39px 0px 0px 750px;
+            background-color: white;
+            border: transparent;
+            box-shadow: none;
+            height: 39px;
+            width: 35px;
+            display: flex;
+            cursor: pointer;
+            border-left: solid 1px grey;
+            i {
+              justify-items: center;
+              margin: 10px 0px 0px 2px;
+            }
+          }
+        }
+        .propaganda_btn-menu_carro-compras {
+          .propaganda {
+            a {
+              img {
+                width: 500px;
+              }
+            }
+          }
+          .btn-menu {
+            display: none;
+          }
+          .carro-compra {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

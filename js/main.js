@@ -10,3 +10,15 @@ function mostrarMenu() {
     menu = false;
   }
 }
+
+/** **/
+
+// Elevator script included on the page, already.
+
+window.onload = function () {
+  var elevator = new Elevator({
+    element: document.querySelector(".elevator-button"),
+    mainAudio: "../asset/music/audio.mp3",
+    endAudio: "../asset/music/end-audio.mp3",
+  });
+};
