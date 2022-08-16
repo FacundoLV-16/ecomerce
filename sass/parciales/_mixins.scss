@@ -1,0 +1,247 @@
+/*---------     MIXINS MENU    ----------*/
+/*******************************************************************************/
+/*---------     1300px para arriba    ----------*/
+@mixin menu-responsive {
+  .navbar-brand {
+    width: 160px;
+  }
+  .nav_logo {
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 30px;
+    padding: 5%;
+    margin: 6% 0% 0% 3%;
+  }
+  form {
+    margin: 0px 0px 0px 0px;
+    width: 50%;
+    input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: transparent;
+      margin: 10px 0px 0px 0px;
+      height: 39px;
+      width: 100%;
+    }
+    .btn {
+      margin: -39px 0px 0px 750px;
+      background-color: white;
+      border: transparent;
+      box-shadow: none;
+      height: 39px;
+      width: 35px;
+      display: flex;
+      cursor: pointer;
+      border-left: solid 1px grey;
+      i {
+        justify-items: center;
+        margin: 10px 0px 0px 2px;
+      }
+    }
+  }
+  .propaganda_btn-menu_carro-compras {
+    .propaganda {
+      a {
+        img {
+          width: 500px;
+        }
+      }
+    }
+    .btn-menu {
+      display: none;
+    }
+    .carro-compra {
+      display: none;
+    }
+  }
+}
+
+/*---------     Buscador    ----------*/
+@mixin config-buscador-movil-s {
+  form {
+    input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: transparent;
+      margin: 25px 0px 0px -31px;
+      height: 39px;
+      width: 100%;
+    }
+    .btn {
+      margin: -39px 0px 0px 120px;
+      background-color: white;
+      border: transparent;
+      box-shadow: none;
+      height: 39px;
+      width: 35px;
+      display: flex;
+      cursor: pointer;
+      border-left: solid 1px grey;
+      i {
+        justify-items: center;
+        margin: 10px 0px 0px 2px;
+      }
+    }
+  }
+}
+
+@mixin config-buscador-movil-m {
+  form {
+    input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: transparent;
+      margin: 25px 0px 0px -31px;
+      height: 39px;
+      width: 100%;
+    }
+    .btn {
+      margin: -39px 0px 0px 180px;
+      background-color: white;
+      border: transparent;
+      box-shadow: none;
+      height: 39px;
+      width: 35px;
+      display: flex;
+      cursor: pointer;
+      border-left: solid 1px grey;
+      i {
+        justify-items: center;
+        margin: 10px 0px 0px 2px;
+      }
+    }
+  }
+}
+
+@mixin config-buscador-movil-l {
+  form {
+    margin: 0px 0px 0px -40px;
+    input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: transparent;
+      margin: 25px 0px 0px 0px;
+      height: 39px;
+      width: 100%;
+    }
+    .btn {
+      margin: -39px 0px 0px 250px;
+      background-color: white;
+      border: transparent;
+      box-shadow: none;
+      height: 39px;
+      width: 35px;
+      display: flex;
+      cursor: pointer;
+      border-left: solid 1px grey;
+      i {
+        justify-items: center;
+        margin: 10px 0px 0px 2px;
+      }
+    }
+  }
+}
+
+@mixin config-buscador-tablet {
+  .nav_logo {
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
+    width: 150px;
+  }
+  form {
+    margin: 0px 0px 0px 0px;
+    width: 25%;
+    input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: transparent;
+      margin: 25px 0px 0px -140px;
+      height: 39px;
+      width: 255%;
+    }
+    .btn {
+      margin: -39px 0px 0px 350px;
+      background-color: white;
+      border: transparent;
+      box-shadow: none;
+      height: 39px;
+      width: 35px;
+      display: flex;
+      cursor: pointer;
+      border-left: solid 1px grey;
+      i {
+        justify-items: center;
+        margin: 10px 0px 0px 2px;
+      }
+    }
+  }
+}
+/*---------     Menu-Desplegable    ----------*/
+@mixin config-menu-desplegable {
+  #menu-desplegable {
+    display: none;
+    position: absolute;
+    margin: -35px 0px 0px -40px;
+    width: 120%;
+    ul {
+      list-style-type: none;
+      li {
+        background-color: white;
+        a {
+          text-decoration: none;
+        }
+        .bienvenida-desplegable {
+          display: flex;
+          flex-direction: row;
+          background-color: #fff159;
+          padding: 1rem;
+          i {
+            margin: 30px 20px 0px 0px;
+          }
+          p {
+            color: gray span {
+
+            }
+          }
+        }
+      }
+    }
+    .login-desplegable {
+      background-color: #fff159;
+      .login {
+        padding: 1rem;
+        width: 100px;
+        height: 50px;
+        margin: 0px 20px 20px 35px;
+      }
+      .register {
+        padding: 1rem;
+        width: 130px;
+        height: 50px;
+      }
+    }
+    .lista-desplegable {
+      ul {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: black;
+          li {
+            padding: 1rem;
+            margin: 0px 0px 0px -50px;
+          }
+        }
+
+        li:hover {
+          background-color: grey;
+        }
+      }
+    }
+  }
+}
