@@ -1,60 +1,70 @@
-@media screen and (min-width: 769px) {
+/** Menu 1 **/
+
+@media screen and (min-width: 1024px) {
   header {
+    #menu-desplegable {
+      display: none;
+    }
     .navbar {
       .container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-
-        /* 1300px para arriba */
-        @media screen and (min-width: 1300px) {
-          @include menu-responsive;
-        }
+        justify-items: flex-start;
+        margin: 0% 50% 0% 0%;
 
         .navbar-brand {
-          width: 160px;
+          margin: 0% 0% 0% 5%;
+          width: 25%;
+          height: 1%;
         }
         .nav_logo {
           background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
           background-repeat: no-repeat;
-          width: 130px;
-          height: 30px;
+          width: 15vw;
+          height: 5vh;
           padding: 5%;
-          margin: 6% 0% 0% 3%;
+          margin: 6% 0% 0% 5%;
         }
+
         form {
           margin: 0px 0px 0px 0px;
-          width: 50%;
+          width: 100%;
           input {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
             border: transparent;
-            margin: 10px 0px 0px 0px;
-            height: 39px;
-            width: 100%;
+            margin: 2.5% 0% 0% 5%;
+            height: 4vh;
+            width: 50vw;
           }
           .btn {
-            margin: -39px 0px 0px 750px;
+            position: relative;
+            margin: -5.9% 0% 0% 98%;
+            @media screen and (min-width: 1440px) {
+              @include config-buscador-pc-1440;
+            }
+            @media screen and (min-width: 1920px) {
+              @include config-buscador-pc-1920;
+            }
             background-color: white;
             border: transparent;
             box-shadow: none;
-            height: 39px;
-            width: 35px;
+            height: 3.7vh;
+            width: 3vw;
             display: flex;
             cursor: pointer;
             border-left: solid 1px grey;
+            justify-content: end;
             i {
-              justify-items: center;
-              margin: 10px 0px 0px 2px;
+              margin: 5.5px 0px 0px 3px;
             }
           }
         }
         .propaganda_btn-menu_carro-compras {
+          margin: 0% 0% 0% 4%;
           .propaganda {
             a {
               img {
-                width: 500px;
+                width: 30vw;
+                height: 6vh;
               }
             }
           }
@@ -63,6 +73,30 @@
           }
           .carro-compra {
             display: none;
+          }
+        }
+      }
+    }
+    .menu {
+      .envio {
+        text-decoration: none;
+        margin: 0% 0% 0% 2%;
+        span {
+          i {
+            color: black;
+          }
+        }
+      }
+      .lista-main {
+        margin: -1.2% 0% 0% 10%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
           }
         }
       }
@@ -152,7 +186,7 @@
           @include config-buscador-movil-l;
         }
         /** Tablet **/
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 767px) {
           @include config-buscador-tablet;
         }
       }
@@ -227,3 +261,5 @@
     }
   }
 }
+
+/** menu 2 **/
