@@ -1,4 +1,22 @@
-main {
-  background-color: grey;
-  padding: 10%;
+.div-canteiner-pago {
+  padding: 5%;
+  .div-formas-de-pago {
+    padding: 1%;
+    border: solid px gray;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    box-shadow: 0px 10px 10px -6px grey;
+    div {
+      padding: 10%;
+    }
+    .otros-metodos {
+      display: flex;
+      img {
+        width: 70%;
+      }
+    }
+    p {
+      color: #3483f4;
+    }
+  }
 }

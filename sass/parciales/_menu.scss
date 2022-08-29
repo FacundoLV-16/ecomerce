@@ -1,265 +1,79 @@
-/** Menu 1 **/
-
-@media screen and (min-width: 1024px) {
+/** movil **/
+@media (max-width: 768px) {
   header {
-    #menu-desplegable {
-      display: none;
-    }
-    .navbar {
-      .container {
-        display: flex;
-        flex-direction: row;
-        justify-items: flex-start;
-        margin: 0% 50% 0% 0%;
-
-        .navbar-brand {
-          margin: 0% 0% 0% 5%;
-          width: 25%;
-          height: 1%;
+    .conteiner-all {
+      .menu-superior {
+        .img-pc {
+          display: none;
         }
-        .nav_logo {
-          background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
-          background-repeat: no-repeat;
-          width: 15vw;
-          height: 5vh;
-          padding: 5%;
-          margin: 6% 0% 0% 5%;
+        .img-propaganda {
+          display: none;
+        }
+      }
+    }
+  }
+}
+/** pc **/
+@media (min-width: 769px) {
+  header {
+    .conteiner-all {
+      .menu-superior {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+
+        grid-template-areas: "logo buscador buscador buscador propaganda";
+        .logo-div {
+          grid-area: logo;
+          .img-pc {
+            padding: 5%;
+            width: 10vw;
+          }
         }
 
         form {
-          margin: 0px 0px 0px 0px;
-          width: 100%;
+          margin: 1.5% 0% 0% -10%;
+          grid-area: buscador;
           input {
-            border: transparent;
-            margin: 2.5% 0% 0% 5%;
+            padding: 1.5%;
+            width: 100%;
             height: 4vh;
-            width: 50vw;
           }
-          .btn {
-            position: relative;
-            margin: -5.9% 0% 0% 98%;
-            @media screen and (min-width: 1440px) {
-              @include config-buscador-pc-1440;
-            }
-            @media screen and (min-width: 1920px) {
-              @include config-buscador-pc-1920;
-            }
-            background-color: white;
-            border: transparent;
-            box-shadow: none;
-            height: 3.7vh;
-            width: 3vw;
+        }
+        .img-propaganda {
+          grid-area: propaganda;
+          width: 100%;
+          padding: 5%;
+        }
+        .mi-cuenta {
+          display: none;
+        }
+        .mis-compras {
+          display: none;
+        }
+        .img-movil {
+          display: none;
+        }
+      }
+      .menu-inferior {
+        .div-menu {
+          .menu {
+            list-style: none;
             display: flex;
-            cursor: pointer;
-            border-left: solid 1px grey;
-            justify-content: end;
-            i {
-              margin: 5.5px 0px 0px 3px;
-            }
-          }
-        }
-        .propaganda_btn-menu_carro-compras {
-          margin: 0% 0% 0% 4%;
-          .propaganda {
-            a {
-              img {
-                width: 30vw;
-                height: 6vh;
-              }
-            }
-          }
-          .btn-menu {
-            display: none;
-          }
-          .carro-compra {
-            display: none;
-          }
-        }
-      }
-    }
-    .menu {
-      .envio {
-        text-decoration: none;
-        margin: 0% 0% 0% 2%;
-        span {
-          i {
-            color: black;
-          }
-        }
-      }
-      .lista-main {
-        margin: -1.2% 0% 0% 10%;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        li {
-          a {
-            text-decoration: none;
-            color: black;
-          }
-        }
-      }
-    }
-  }
-}
+            justify-content: center;
 
-@media screen and (max-width: 768px) {
-  header {
-    .envio {
-      display: flex;
-      flex-direction: row;
-      border-top: solid 1px grey;
-      border-bottom: solid 1px grey;
-      text-decoration: none;
-      color: black;
-      margin: 0px 0px -20px 0px;
-      span {
-        margin: 10px 0px 10px 10px;
-      }
-    }
-    .navbar {
-      ul {
-        list-style: none;
-      }
-      .container {
-        display: flex;
-        justify-content: space-between;
-
-        a {
-          width: 70px;
-          height: 70px;
-          margin: 0px 20px 0px 0px;
-        }
-        .nav_logo {
-          background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__small.png);
-          background-repeat: no-repeat;
-          margin: 40% 0% 0% 20%;
-          height: 70px;
-          width: 80px;
-        }
-        .propaganda_btn-menu_carro-compras {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 4% 0% 0% 0%;
-          margin: 0% 0% 0% 0%;
-          @media (min-width: 768px) and (max-width: 768px) {
-            padding: 2.5% 0% 0% 0%;
-          }
-
-          .propaganda {
-            display: none;
-          }
-
-          .btn-menu {
-            width: 25px;
-            &:hover {
-              font-size: 105%;
-            }
-            button {
-              border: none;
-              background-color: transparent;
-              i {
-                cursor: pointer;
-              }
-            }
-          }
-
-          .carro-compra {
-            &:hover {
-              font-size: 105%;
-            }
-          }
-        }
-        /** Buscador **/
-        /** Movil S **/
-        @media screen and (min-width: 320px) {
-          @include config-buscador-movil-s;
-        }
-        /** Movil M **/
-        @media screen and (min-width: 375px) {
-          @include config-buscador-movil-m;
-        }
-        /** Movil L **/
-        @media screen and (min-width: 425px) {
-          @include config-buscador-movil-l;
-        }
-        /** Tablet **/
-        @media screen and (min-width: 767px) {
-          @include config-buscador-tablet;
-        }
-      }
-    }
-    .menu {
-      .lista-main {
-        display: none;
-      }
-    }
-    #menu-desplegable {
-      display: none;
-      position: absolute;
-      margin: -35px 0px 0px -40px;
-      ul {
-        list-style-type: none;
-        li {
-          background-color: white;
-          a {
-            text-decoration: none;
-          }
-          .bienvenida-desplegable {
-            display: flex;
-            flex-direction: row;
-            background-color: #fff159;
-            padding: 1rem;
-            i {
-              margin: 30px 20px 0px 0px;
-            }
-            p {
-              color: gray span {
-
-              }
-            }
-          }
-        }
-      }
-      .login-desplegable {
-        background-color: #fff159;
-        .login {
-          padding: 1rem;
-          width: 100px;
-          height: 50px;
-          margin: 0px 20px 20px 35px;
-        }
-        .register {
-          padding: 1rem;
-          width: 130px;
-          height: 50px;
-        }
-      }
-      .lista-desplegable {
-        ul {
-          display: flex;
-          flex-direction: column;
-          a {
-            text-decoration: none;
-            color: black;
             li {
-              padding: 1rem;
-              margin: 0px 0px 0px -50px;
+              margin: 0% 0% 0% 2%;
+              a {
+                text-decoration: none;
+                color: grey;
+                &:hover {
+                  color: black;
+                }
+              }
             }
-          }
-
-          li:hover {
-            background-color: grey;
           }
         }
       }
     }
-    @media screen and (min-width: 768px) {
-      @include config-menu-desplegable;
-    }
   }
 }
-
-/** menu 2 **/
