@@ -1,0 +1,74 @@
+#crear-cuenta-part1 {
+  display: block;
+  .card-conteiner {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    .card {
+      padding: 5%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      .formulario {
+        margin: 10% 0% 0% 0%;
+        form {
+          display: flex;
+          flex-direction: column;
+          input {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin: 0% 0% 10% 0%;
+            height: 40px;
+            border: solid 2px grey;
+          }
+          button {
+            margin: 0% 0% 2% 0%;
+            padding: 2%;
+            background-color: #3483fa;
+            border-color: transparent;
+            color: #fff;
+            &:hover {
+              background-color: #237afd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#crear-cuenta-part2 {
+  display: none;
+  .card-conteiner {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    .card {
+      padding: 5%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      .formulario {
+        margin: 10% 0% 0% 0%;
+        form {
+          display: flex;
+          flex-direction: column;
+          input {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin: 0% 0% 10% 0%;
+            height: 40px;
+            border: solid 2px grey;
+          }
+          button {
+            margin: 0% 0% 2% 0%;
+            padding: 2%;
+            background-color: #3483fa;
+            border-color: transparent;
+            color: #fff;
+            &:hover {
+              background-color: #237afd;
+            }
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

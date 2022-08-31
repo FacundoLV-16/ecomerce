@@ -33,39 +33,49 @@
       </div>
     </header>
     <main>
-        <!-- Iniciar sesion parte 1-->
-        <div id="iniciar-sesion-part1">
+      
+        <!-- Crear cuenta -->
+        <div id="crear-cuenta-part1">
           <div class="card-conteiner">
           <div  class="card">
             <div class="titulo">
-              <h2>¡Hola! Para seguir, ingresá tu e-mail</h2>
+              <h5>¡Hola! Para seguir, ingresá sus datos</h5>
             </div>
             <div class="formulario">
-              <form action=""><input type="text" placeholder="e-mail">
-                <button>Continuar</button>
-                <button>Crear cuenta</button>
+              <form action="">
+                <input type="text" placeholder="e-mail">
+                    <input type="text" placeholder="contraseña">
+                    <input type="text" placeholder="nombre de usuario">
+                    <button onclick="crear_cuenta()">Crear cuenta</button>
+                    
+              </form>
+              <form action="user-session.html">
+                <button>Iniciar sesion</button>
               </form>
             </div>
           </div>
         </div>
         </div>
-        <!-- Iniciar sesion parte 2-->
-        <div id="iniciar-sesion-part2">
-             <div class="card-conteiner">
+        
+        <!-- Cuenta creada-->
+        <div id="crear-cuenta-part2">
+           <div class="card-conteiner">
           <div  class="card">
             <div class="titulo">
-              <h2>¡Hola! Para seguir, ingresá tu contraseña</h2>
+              <h5>¡Felicidades! Su cuenta a sido creada exitosamente</h5>
             </div>
             <div class="formulario">
-              <form action=""><input type="text" placeholder="contraseña">
-                <button>Continuar</button>
-                <button>Crear cuenta</button>
+              <form action="user-session.html">
+                  <button>Iniciar Sesion</button>
+              </form>
+              <form action="../index.html">
+                <button>Volver al inicio</button>
               </form>
             </div>
           </div>
         </div>
         </div>
-
+       
     </main>
     <footer></footer>
     <!-- -----JS----- -->
